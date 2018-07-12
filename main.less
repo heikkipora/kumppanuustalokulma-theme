@@ -342,7 +342,7 @@ body.fade-in-nav .paris-header {
 .wsite-header-section {
   position: relative;
   width: 100%;
-  padding: 55px 0;
+  padding: 0;
   box-sizing: border-box;
   background: #ffffff url(images/default-bg.jpg) center center no-repeat;
   background-size: cover;
@@ -363,6 +363,7 @@ body.fade-in-nav .paris-header {
   display: table;
   overflow-y: hidden;
   height: 100%;
+  padding: 0;
 }
 .banner-wrap .banner {
   position: relative;
@@ -402,6 +403,9 @@ body.fade-in-nav .paris-header {
 }
 .banner-wrap .banner .wsite-button:hover .wsite-button-inner {
   background: @hoverColor;
+}
+.banner-wrap .banner .wsite-image {
+  padding: 0 !important;
 }
 /* Content */
 .main-wrap {
@@ -1406,9 +1410,6 @@ body.fade-in-nav .paris-header {
   /* Banner */
   .banner-wrap .banner {
     overflow-x: hidden;
-  }
-  .banner-wrap .container {
-    padding: 50px 20px;
   }
   .banner-wrap .banner h2 {
     font-size: 36px !important;
