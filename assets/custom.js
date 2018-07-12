@@ -189,5 +189,13 @@ jQuery(function($) {
 
   $(document).ready(function(){
     parisController.init();
+    reformatDates(".date-text");
   });
 });
+
+function reformatDates(cssSelector) {
+  $(cssSelector).each(function() {
+    const date = $(this).text().replace(/\//g, ".")
+    $(this).text(date)
+  });
+}
