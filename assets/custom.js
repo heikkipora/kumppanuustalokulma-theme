@@ -190,12 +190,20 @@ jQuery(function($) {
   $(document).ready(function(){
     parisController.init();
     reformatDates(".date-text");
+    bindFacebookLink();
   });
 });
 
 function reformatDates(cssSelector) {
   $(cssSelector).each(function() {
-    const date = $(this).text().replace(/\//g, ".")
-    $(this).text(date)
+    const date = $(this).text().replace(/\//g, ".");
+    $(this).text(date);
   });
+}
+
+function bindFacebookLink() {
+  $('.paris-header .wsite-logo').click(function(e) {
+    e.preventDefault();
+    document.location = 'https://www.facebook.com/kumppanuustalokulma';
+  })
 }
